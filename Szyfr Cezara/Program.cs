@@ -2,8 +2,6 @@
 
 string text; 
 int key; 
-
-
 string kodCezara(string t, int k)
 {
     t = t.ToUpper();
@@ -19,12 +17,9 @@ string kodCezara(string t, int k)
     }
     return encryptedText;
 }
-
 Console.WriteLine("Wpisz tekst który chcesz zaszyfrować");
 text = Console.ReadLine() ?? "";
 Console.WriteLine("O ile mają być przesuniete litery:");
 key = int.Parse(Console.ReadLine() ?? "");
-
-
 
 Console.WriteLine("Zaszyfrowana Wiadomość: " + kodCezara(text, key));
